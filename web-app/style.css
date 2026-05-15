@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background: linear-gradient(180deg,#0b1020,#081023); color: #fff; }
+.container { max-width:480px; margin:40px auto; background: rgba(255,255,255,0.03); padding:20px; border-radius:10px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }
+h1 { text-align:center; margin-bottom:12px; }
+.controls { display:flex; flex-direction:column; gap:10px; }
+button { padding:10px; border-radius:6px; border: none; background: #ff7a59; color:#fff; cursor:pointer; }
+input[type="range"] { width:100%; }
+input[type="color"] { width:48px; height:36px; padding:0; border:none; background:none; }
+input[type="text"] { padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.1); }
+#status { margin-top:10px; font-size:14px; color:#cbd5e1; }

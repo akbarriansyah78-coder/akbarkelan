@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saturn Gift Controller</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🪐 Saturn Romantic Gift</h1>
+    <div class="controls">
+      <button id="startBtn">Mulai Putar</button>
+      <button id="stopBtn">Berhenti</button>
+
+      <label>Kecepatan: <span id="speedVal">150</span></label>
+      <input id="speed" type="range" min="0" max="255" value="150" />
+
+      <label>Warna LED:</label>
+      <input id="color" type="color" value="#ff6432" />
+
+      <label>Pesan romantis:</label>
+      <input id="message" type="text" placeholder="Ketik pesan..." />
+      <button id="sendMsg">Kirim Pesan</button>
+
+      <label>Pola:</label>
+      <select id="pattern">
+        <option value="none">None</option>
+        <option value="romantic">Romantic Pulse</option>
+      </select>
+    </div>
+    <div id="status">Status: disconnected</div>
+  </div>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="control.js"></script>
+</body>
+</html>
